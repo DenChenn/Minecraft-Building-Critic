@@ -1,0 +1,3 @@
+name: AIbuildingCritic
+version: ${project.version}
+main: me.yentingchen.aibuildingcritic.AIbuildingCritic
