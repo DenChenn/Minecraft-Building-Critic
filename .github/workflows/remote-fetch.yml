@@ -48,10 +48,10 @@ jobs:
         asset_path: ./target/AIbuildingCritic-1.0-SNAPSHOT.jar
         asset_name: AIbuildingCritic-1.0-SNAPSHOT.jar
         asset_content_type: application/jar
-#     - name: Fetch New Plugin to Server
-#       uses: appleboy/ssh-action@master
-#       with:
-#         host: ${{ secrets.HOST }}
-#         username: root
-#         key: ${{ secrets.RSA_KEY }}
-#         script: bash stop-and-restart.sh
+    - name: Fetch New Plugin to Server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: root
+        key: ${{ secrets.RSA_KEY }}
+        script: bash stop-and-restart.sh
